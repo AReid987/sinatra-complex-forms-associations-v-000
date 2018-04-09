@@ -26,7 +26,7 @@ class OwnersController < ApplicationController
   end
 
   get '/owners/:id' do
-
+    @owner = Owner.find(params[:id])
     erb :'/owners/show'
   end
 
